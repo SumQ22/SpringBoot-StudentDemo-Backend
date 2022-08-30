@@ -20,7 +20,7 @@ public class StudentController {
 	@Autowired
 	private StudentRepository studentRepository;
 	
-	@PostMapping("/")
+	@PostMapping("/create")
 	public void createStudent(@RequestBody Student student) {
 		studentRepository.insert(student);
 	}
